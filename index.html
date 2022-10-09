@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <div class="flex flex-col m-0 p-0 w-[15vw] bg-[#1992d4] fixed h-full overflow-auto gap-14 font-bold">
+    <div class="flex flex-col m-0 p-0 w-[15vw] bg-[#1992d4] fixed h-full overflow-auto gap-14 font-bold z-50">
         <div class="text-white text-2xl text-white pl-10 ">
             <img src="" alt="">
             Dashboard
@@ -58,8 +58,8 @@
         </div>
     </div>
     <!-- Header -->
-    <div class="flex flex-col h-[18vh] w-full bg-white ml-[15vw] bg-white drop-shadow-md border-solid gap-5 fixed z-50">
-        <div class="flex flex-row h-[8vh] ml-10 items-center w-full gap-[27vw] border-solid">
+    <div class="flex flex-col h-[20vh] w-[80vw] w-full bg-white bg-white drop-shadow-md border-solid gap-5 fixed z-40 border-2 border-cyan-500">
+        <div class="flex flex-row h-[8vh] ml-10 items-center border-solid ml-[20vw]">
             <!-- Search bar -->
             <div class="flex items-center gap-2 ">
                 <img src="assets/icons/magnify.png" alt="" class="h-5">
@@ -69,14 +69,14 @@
             </div>
             
             <!-- User icon top right -->
-            <div class="flex gap-5 items-center text-lg font-bold">
+            <div class="flex gap-5 items-center text-lg font-bold pl-[13vw]">
                 <img src="assets/icons/bell-ring-outline.png" alt="">
                 <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-8 w-8">
                 Morgan Oakley
             </div>
         </div>
 
-        <div class="flex items-center ml-10 gap-[48vw]">
+        <div class="flex items-center ml-10 ml-[20vw]">
             <!-- User intro bottom left -->
             <div class="flex items-center gap-3">
                 <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-14 w-14">
@@ -85,7 +85,7 @@
                     <p class="text-xl">Morgan Oakley (@morgan)</p>
                 </div>
             </div>
-            <div class="flex gap-4 [&>*]:rounded-full [&>*]:bg-[#1992d4] [&>*]:px-5 [&>*]:py-2 text-white font-medium ">
+            <div class="flex gap-4 [&>*]:rounded-full [&>*]:bg-[#1992d4] [&>*]:px-5 [&>*]:py-2 text-white font-medium pl-[30vw]">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
@@ -95,91 +95,140 @@
         </div>
     </div>
 
-    <div class="flex pl-[15vw]  pt-[18vh] h-full w-[100vw] bg-[#e2e8f0] font-bold">
+    <div class="flex pl-[15vw] pt-[18vh] h-full w-[100vw] bg-[#e2e8f0] font-bold">
         <!-- Content -->
-        <div class="ml-5 mt-10 grid grid-cols-2 gap-10">
-            <div class="border-2 border-cyan-500">
-                <p class="text-xl mb-5">Your Projects</p>
+        <div class="ml-5 mt-10 flex gap-10">
+            <div class="border-2 border-cyan-500 w-[65vw]">
                 <!-- Projects -->
-                <div class="w-[50vw]  grid grid-cols-2 gap-5">
-                    
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-wrap flex-shrink">
-                        <div class="flex flex-col flex-shrink mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                <p class="text-xl mb-5">Your Projects</p>  
+                <div class="flex">
+                    <div class="w-[60vw] grid grid-cols-2 gap-5 ">
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-wrap flex-shrink">
+                            <div class="flex flex-col flex-shrink mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
-                        
-                        <div class="flex gap-6 justify-end mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
+                            <div class="mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil.</p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end bg-white mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
-                        <div class="mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 ">
+                            <div class="mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end bg-white mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
-                        
-                        <div class="flex gap-6 justify-end bg-white mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
+                            <div class="mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end bg-white mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 ">
-                        <div class="mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
+                            <div class="mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end bg-white mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
-                        
-                        <div class="flex gap-6 justify-end bg-white mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
-                        </div>
-                    </div>
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
-                        <div class="mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
-                        </div>
-                        
-                        <div class="flex gap-6 justify-end bg-white mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
-                        </div>
-                    </div>
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 flex-shrink">
-                        <div class="mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
-                        </div>
-                        
-                        <div class="flex gap-6 justify-end bg-white mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
-                        </div>
-                    </div>
-                    <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 ">
-                        <div class="mt-8">
-                            <p>Super Cool Project</p>
-                            <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
-                        </div>
-                        
-                        <div class="flex gap-6 justify-end bg-white mb-5">
-                            <img src="assets/icons/star-plus-outline.png"  class="" alt="">
-                            <img src="assets/icons/eye-plus-outline.png" alt="">
-                            <img src="assets/icons/share-variant-outline.png" alt="">
+                        <div class="flex flex-col rounded-md bg-white border-l-8 border-[#f0b429] drop-shadow-md gap-10 [&>*]:mx-5 ">
+                            <div class="mt-8">
+                                <p>Super Cool Project</p>
+                                <p class="font-normal whitespace-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolores cupiditate nihil, aperiam consectetur rem est officiis molestiae temporibus saepe natus voluptate? Beatae sequi, animi exercitationem unde autem minus adipisci.</p>
+                            </div>
+                            
+                            <div class="flex gap-6 justify-end bg-white mb-5">
+                                <img src="assets/icons/star-plus-outline.png"  class="" alt="">
+                                <img src="assets/icons/eye-plus-outline.png" alt="">
+                                <img src="assets/icons/share-variant-outline.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border-2 border-cyan-500">
-
-                <p>Announcements</p>
+            <div class="border-2 border-cyan-500 ">
+                <p class="text-xl mb-5">Announcements</p>
+                <div class="flex">
+                    <div class="flex flex-col gap-3 rounded bg-white drop-shadow-md p-4">
+                        <div class="border-b-2 border-slate-300">
+                            <p class="text-lg mb-2">Site Maintenance</p>
+                            <p class="text-sm font-normal pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="border-b-2 border-slate-300">
+                            <p class="text-lg mb-2">Community Share Day</p>
+                            <p class="text-sm font-normal pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <p class="text-lg mb-2">Update Privacy Policy</p>
+                            <p class="text-sm font-normal pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum corrupti commodi cumque odit doloremque. Quia fugit repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xl my-5">Trending</p>
+                <div class="flex">
+                    <div class="flex flex-col gap-3 rounded bg-white drop-shadow-md p-4 text-sm font-normal w-full h-full">
+                        <div class="flex items-center gap-5">
+                            <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-10 w-10">
+                            <div class="flex flex-col">
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-10 w-10">
+                            <div class="flex flex-col">
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-10 w-10">
+                            <div class="flex flex-col">
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="assets/icons/ProfileIcon.jpg" alt="" class="rounded-full h-10 w-10">
+                            <div class="flex flex-col">
+                                <p>@Alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
